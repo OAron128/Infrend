@@ -1,0 +1,33 @@
+<div class="row justify-content-md-center">
+    <div class="col-md-6">
+        <h4>Helyszín adatok</h4>
+        <hr>
+    </div>
+</div>
+
+<div class="row justify-content-md-center">
+    <div class="col-md-6">
+        <form [formGroup]="localForm">
+            
+            <div class="mb-3">
+                <label for="intezmeny" class="form-label">Intézmény neve: </label>
+                <input type="text" class="form-control" id="intezmeny" name="intezmeny" formControlName="intezmeny">
+            </div>
+
+            <div class="mb-3">
+                <label for="cim" class="form-label">Helyszín címe: </label>
+                <input type="text" class="form-control" id="cim" name="cim" formControlName="cim">
+            </div>
+
+            <div class="mb-3">
+                <label for="activity" class="form-label">Activitás</label>
+                <input type="number" class="form-control" id="activity" name="activity" formControlName="activity">
+            </div>
+
+            
+            <div class="text-end">
+                <button class="btn btn-outline-primary" (click)="saveLocal()">Mentés</button>
+            </div>
+        </form>
+    </div>
+</div>
