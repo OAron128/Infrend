@@ -1,0 +1,40 @@
+<table>
+    <thead>
+        <tr>
+            <th>Azonosító</th>
+            <th>Véradó neve:</th>
+            <th>Neme</th>
+            <th>Állampolgárság</th>
+            <th>Születési Helyszín</th>
+            <th>Születési Dátum</th>
+            <th>Lakcím</th>
+            <th>Tajszám</th>
+            <th>Irányított</th>
+            <th>Beteg Neve</th>
+            <th>Beteg Tajszáma</th>
+            <th>Értékelés</th>
+            <th>Alkalmasság</th>
+            <th>Okozat</th>
+            <th>Orvos Neve</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let verado of veradok">
+            <td>{{verado.id}}</td>
+            <td>{{verado.name}}</td>
+            <td>{{verado.neme}}</td>
+            <td>{{verado.allampolgarsag}}</td>
+            <td>{{verado.szulhely}}</td>
+            <td>{{verado.szulido}}</td>
+            <td>{{verado.Lakcim}}</td>
+            <td>{{verado.tajszam}}</td>
+            <th>{{verado.id}}</th>
+            <th>{{verado.name}}</th>
+            <th>{{verado.tajszam}}</th>
+            <th>{{verado.alkalmassag}}</th>
+            <th>{{verado.orvos}}</th>
+            <th>{{verado.okozat}}</th>
+        </tr>
+    </tbody>
+</table>

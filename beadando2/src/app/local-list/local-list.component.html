@@ -1,0 +1,29 @@
+<button routerLink="local-list">Új hozzáadása</button>
+<!-- <ul>
+    <li *ngFor="let local of locals">{{local.intezmeny}}</li>
+</ul> -->
+<table>
+    <thead>
+        <tr>
+            <th>Azonosító</th>
+            <th>Intézmény</th>
+            <th>Cím</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let local of locals">
+            <td>{{local.id}}</td>
+            <td>{{local.intezmeny}}</td>
+            <td>{{loclal.cim}}</td>
+            <!-- <td><i class="ri-edit-line"></i> <span class="vertical-line"></span> <span (click)="deleteLocal(local)"><i class="ri-delete-bin-line"></i></span></td> -->
+            <td><span (click)="editLocal(local)"><i class="ri-edit-line"></i></span> <span class="vertical-line"></span> <span (click)="deleteLocal(local)"><i class="ri-delete-bin-line"></i></span></td>
+        </tr>
+
+        <select [(ngModel)]="selectedLocal">
+            <option value="" disabled selected>Válaszd i aktív e a helyszín</option>
+            <option *ngFor="let local of locals" [value]="partner.companyname">{{local.activity}}</option>
+        </select>
+        <input type="number" [(ngModel)]="paymentAmount" placeholder="Befizetett összeg">
+        <button (click)="makePayment()">Befizetés</button>
+    </tbody>
+</table>

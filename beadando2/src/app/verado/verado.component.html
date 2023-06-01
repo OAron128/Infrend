@@ -1,0 +1,65 @@
+<div class="row justify-content-md-center mt-30">
+    <div class="col-md-6">
+        <h4>Véradó Adatai</h4>
+        <hr>
+    </div>
+</div>
+<div class="row justify-content-md-center">
+    <div class="col-md-6">
+            <form [formGroup]="partnerForm">
+            <div class="mb-3">
+                <label for="verado" class="form-label">Véradó neve</label>
+                <input type="text" class="form-control" id="verado" name="verado" formControlName="verado">
+            </div>
+
+            <div class="mb-3">
+                <label for="type" class="form-label">Neme:</label>
+                <input type="text" class="form-control" id="neme" name="neme" formControlName="neme">
+            </div>
+
+            <div class="mb-3">
+                <label for="type" class="form-label">Állampolgárság:</label>
+                <input type="text" class="form-control" id="allampolgarsag" name="allampolgarsag" formControlName="allampolgarsag">
+            </div>
+
+            <div class="mb-3">
+                <label for="type" class="form-label">Születési Helyszín:</label>
+                <input type="text" class="form-control" id="szulhely" name="szulhely" formControlName="szulhely">
+            </div>
+
+            <div class="mb-3">
+                <label for="type" class="form-label">Születési Dátum:</label>
+                <input type="text" class="form-control" id="szulido" name="szulido" formControlName="szulido">
+            </div>
+
+            <div class="mb-3">
+                <label for="type" class="form-label">Lakcím:</label>
+                <input type="text" class="form-control" id="Lakcim" name="Lakcim" formControlName="Lakcim">
+            </div>
+
+            <div class="mb-3">
+                <label for="type" class="form-label">TAJ Szám:</label>
+                <input type="text" class="form-control" id="tajszam" name="tajszam" formControlName="tajszam">
+            </div>
+
+            <div class="text-end">
+                <button class="btn btn-outline-primary" (click)="checkTaj()">Tajszám ellenörző gomb</button>
+            </div>
+
+            <div class="mb-3">
+                <label for="type" class="form-label">Irányított véradás e? Ha igen akkor a két pont közül jelölje be az egyiket!</label>
+                <input type="text" class="form-control" id="tajszam" name="tajszam" formControlName="tajszam">
+            </div>
+
+            
+            <div class="mb-3">
+                <label for="type" class="form-label">Értékelés rész jön amihez kéne egy ujjabb feljövő rész az orvosnak</label>
+                <input type="text" class="form-control" id="tajszam" name="tajszam" formControlName="tajszam">
+            </div>
+
+            <div class="text-end">
+                <button class="btn btn-outline-primary" (click)="saveVerado()">Mentés</button>
+            </div>
+        </form>
+    </div>
+</div>
