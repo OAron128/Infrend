@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">Véradás</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/">Helyszínek</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/local">Új Helyszín</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/verado-list">Véradók</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/verado">Új Véradó</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

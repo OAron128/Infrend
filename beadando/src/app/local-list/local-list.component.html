@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-md-6 mb-3" *ngFor="let local of locals">
+        <table>
+            <thead>
+                <tr>
+                    <th>Azonosító</th>
+                    <th>Intézmény neve:</th>
+                    <th>Cím</th>
+                    <th>Aktivitás</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let local of locals">
+                    <td>{{local.id}}</td>
+                    <td>{{local.intezmeny}}</td>
+                    <td>{{local.cim}}</td>
+                    <td>{{local.activity}}</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="row">
+            <div class="col-md-3">
+                <button class="btn btn-sm btn-outline-primary" (click)="editLocal(local)">Szerkesztés</button>
+            </div>
+            <div class="col-md-3">
+                <button class="btn btn-sm btn-outline-danger" (click)="deleteLocal(local)">Törlés</button>
+            </div>
+        </div>
+    </div>
+</div>
